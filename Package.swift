@@ -16,7 +16,7 @@ let package = Package(
     targets: [
         .target(name: "Srt", dependencies: ["libsrt"]),
         .binaryTarget(name: "libsrt",
-                      url: "https://github.com/eerimoq/xcframeworks/releases/download/libsrt-0.1.0/libsrt.xcframework.zip",
-                      checksum: "0578b194f5781678168e37e4003581362fa1959eb4b5e7f82fba5eb0eb9e03f7")
+                      url: "https://github.com/eerimoq/xcframeworks/releases/download/libsrt-0.1.0-2/libsrt.xcframework.zip",
+                      checksum: "cc08d393aeebd072ab15aacc348b60363fc26b95b09ce00388cc6913bb381c0d")
     ]
 )
