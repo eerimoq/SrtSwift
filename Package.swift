@@ -6,7 +6,8 @@ import PackageDescription
 let package = Package(
     name: "Srt",
     platforms: [
-        .iOS(.v16)
+        .iOS(.v16),
+        .macCatalyst(.v13)
     ],
     products: [
         .library(
@@ -16,7 +17,7 @@ let package = Package(
     targets: [
         .target(name: "Srt", dependencies: ["libsrt"]),
         .binaryTarget(name: "libsrt",
-                      url: "https://github.com/eerimoq/xcframeworks/releases/download/libsrt-0.1.0-2/libsrt.xcframework.zip",
-                      checksum: "cc08d393aeebd072ab15aacc348b60363fc26b95b09ce00388cc6913bb381c0d")
+                      url: "https://github.com/eerimoq/xcframeworks/releases/download/libsrt-0.1.0-3/libsrt.xcframework.zip",
+                      checksum: "d5d330dcc1abafd49383cdb010665199ea30265851d2b97c27646073a5099d0b")
     ]
 )
